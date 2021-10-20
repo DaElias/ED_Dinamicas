@@ -7,6 +7,7 @@ package datos;
 
 import datos.estructuras.ListaSimpleNodo;
 import datos.Util.ListaSimple;
+import datos.estructuras.ListaCircular;
 
 /**
  *
@@ -15,7 +16,7 @@ import datos.Util.ListaSimple;
 public class Test {
 
     public static void main(String[] args) {
-        ListaSimple<Integer> lista = new ListaSimpleNodo<>();
+        ListaSimple<Integer> lista = new ListaCircular<>();
 //      lista.insertarInicio(1);
 //        lista.insertarInicio(2);
 //        lista.insertarInicio(3);
@@ -27,9 +28,12 @@ public class Test {
         lista.insertarFin(5);
         lista.insertarFin(6);
         lista.insertarFin(7);
+        //lista.eliminarInicio();
+        System.out.println(lista.mostrar());
+        lista.eliminarFin();
+        System.out.println("Cantidad: "+lista.cantidad());
+        System.out.println(lista.mostrar());
 
-        //System.out.println(lista.mostrar());
-//        lista.eliminarInicio();
 //        System.out.println(lista.mostrar());
         // System.out.println(lista.cantidad());
 //
