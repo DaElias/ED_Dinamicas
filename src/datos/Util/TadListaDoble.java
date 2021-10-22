@@ -7,18 +7,27 @@ package datos.Util;
 
 /**
  *
- * @author davidcerchiaro
+ * @author davidcerchiaro y Daniel Yepes
  */
-public interface ListaDoble<E> {
+public interface TadListaDoble<E> {
+
+    void insertarInicio(E x);
+
     void insertarFin(E x);
-    void eliminarFin();
+
     void eliminarInicio();
-    void eliminar(E x);
-    int cantidad();
+
+    void eliminarFin();
+
     String mostrar();
-    E obtener(int pos);
-    boolean vacia();
-    
-    void insertarDespues(E x,E y);
-    void insertarAntes(E x,E y);
+
+    int cantidad();
+
+    void eliminarElemento(E x);
+
+    void insertarDespues(E x, E y);
+
+    void insertarAntes(E x, E y);
+
+    boolean isEmpty();
 }
