@@ -90,7 +90,7 @@ public class ArbolPalabras {
         }
     }
 
-    //R-i-d
+    //R-i-d (raíz, izquierda, derecha)
     public void preOrden(Arbin<String> r) {
         if (r != null) {
             System.out.println(" " + r.obtener()); //R
@@ -99,7 +99,7 @@ public class ArbolPalabras {
         }
     }
 
-    //i-R-d
+    //i-R-d (izquierda, raíz, derecha)
     public void inOrden(Arbin<String> r) {
         if (r != null) {
             inOrden(r.izq()); //i
@@ -108,7 +108,7 @@ public class ArbolPalabras {
         }
     }
 
-    //i-d-R
+    //i-d-R  (izquierda, derecha, raíz)
     public void posOrden(Arbin<String> r) {
         if (r != null) {
             posOrden(r.izq()); //i
